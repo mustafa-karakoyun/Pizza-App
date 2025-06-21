@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Bungee&display=swap');
+
+/* --- Genel Stiller --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* --- Header --- */
+.main-header {
+    background-color: #6a3ab2;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .logo {
+    font-family: 'Bungee', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.main-header .cart {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.main-header .cart i {
+    margin-right: 8px;
+}
+
+/* --- Checkout Başlığı --- */
+.checkout-title {
+    font-family: 'Bungee', cursive;
+    color: #e83e8c;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: 3px 3px 0px #f0f0f0;
+}
+
+/* --- Checkout Alanı --- */
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+/* --- Butonlar --- */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.btn-fake-customer {
+    background-color: #28a745;
+}
+
+.btn-fake-customer:hover {
+    background-color: #218838;
+}
+
+.btn-test-card {
+    background-color: #007bff;
+}
+
+.btn-test-card:hover {
+    background-color: #0069d9;
+}
+
+.btn-place-order {
+    background-color: #17a2b8;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.btn-place-order:hover {
+    background-color: #138496;
+}
+
+
+/* --- Form Elemanları --- */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+/* --- Ödeme Formu Özel Stilleri --- */
+.payment-form {
+    border: 1px solid hsl(0, 25%, 35%);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.payment-form input {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.payment-form input:focus {
+    outline: none;
+    border-bottom-color: #6a3ab2;
+}
+
+.payment-form input#card-number {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #888;
+}
+
+
+/* --- Footer --- */
+.main-footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.main-footer a {
+    color: #6a3ab2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* --- Mobil Uyum (Responsive Tasarım) --- */
+@media (max-width: 992px) {
+    .checkout-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 1rem;
+    }
+    .checkout-title {
+        font-size: 2.2rem;
+    }
+    .main-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

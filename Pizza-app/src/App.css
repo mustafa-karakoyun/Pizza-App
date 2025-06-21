@@ -1,0 +1,74 @@
+/* 🌙 Karanlık Tema İçin Renk Değişkenleri */
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color:  #f8f8f8;
+  --navbar-bg: #1f1f1f;
+  --card-bg: #2a2a2a;
+  --card-text:  #f8f8f8;
+  --footer-bg: #1a1a1a;
+  --footer-text: #bbb;
+}
+/* Karanlık modda cart içerikleri uyumlu olsun */
+body.dark-mode .cart-card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+}
+
+body.dark-mode .cart-title,
+body.dark-mode .cart-body,
+body.dark-mode .cart-price,
+body.dark-mode b {
+  color: var(--card-text);
+}
+
+/* İsteğe bağlı: Quantity button'lar için de kontrast iyileştirme */
+body.dark-mode .quantity-btn {
+  background-color: #333;
+  color: #fff;
+}
+body.dark-mode .quantity-btn:hover {
+  background-color: #555;
+}
+
+
+/* ☀️ Açık Tema İçin Renk Değişkenleri */
+body {
+  --bg-color: #fdfdfd;
+  --text-color: #222;
+  --navbar-bg: #6435c9;
+  --card-bg: #fff;
+  --card-text: #222;
+  --footer-bg: #f2f2f2;
+  --footer-text: #9f9f9f;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--navbar-bg) !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Kartlar */
+.card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

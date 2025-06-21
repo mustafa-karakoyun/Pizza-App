@@ -1,0 +1,165 @@
+
+.custom-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.item {
+    transition: all .15s ease;
+}
+
+.add-to-cart-button {
+  background-color: #c038c557;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.4em 0.8em;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  font-size: 0.9em;
+} 
+
+.add-to-cart-button:hover {
+  background-color: #c038c5;
+}
+
+.item:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .16);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+.item-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #424851;
+  background: #fdfdfd;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px; 
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+}
+
+
+.footer p {
+  font-size: .9em;
+  color: #9f9f9f;
+}
+
+
+.pizza-list {
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+
+.card.item {
+  height: 100%;
+  border: 1px solid #6435c9;
+  border-radius: 12px;
+  /* box-shadow: 8px 8px 0px -2px rgba(100, 53, 201, 0.5); */
+  transition: transform 0.2s ease;
+}
+
+.card.item:hover {
+  transform: scale(1.03);
+}
+
+.card-img-top {
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 200px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.3em;
+  color: #6435c9;
+}
+
+.card-text {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.item-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.item-price b {
+  font-size: 1.1em;
+  color: #c038c5e0;
+}
+
+.btn-danger {
+  background-color: #ff7575;
+  border: none;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  transition: background 0.2s ease;
+}
+
+.btn-danger:hover {
+  background-color: #e74646;
+}
+
+.navbar {
+  background-color: #6435c9 !important;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-family: 'Bangers', cursive;
+  font-size: 2em;
+  color: #fff !important;
+}
+
+.card-shadow-primary {
+  box-shadow: 0 8px 16px rgba(13, 110, 253, 0.4);
+}
+
+.card-shadow-danger {
+  box-shadow: 0 8px 16px rgba(220, 53, 69, 0.4);
+}
+
+.card-shadow-success {
+  box-shadow: 0 8px 16px rgba(25, 135, 84, 0.4);
+}
+
+.card-shadow-warning {
+  box-shadow: 0 8px 16px rgba(255, 193, 7, 0.4);
+}
+
+.card-shadow-secondary {
+  box-shadow: 0 8px 16px rgba(108, 117, 125, 0.4);
+}
+
+.card-shadow-magic {
+  box-shadow: 0 8px 16px rgba(192, 56, 197, 0.5);
+}
+
+
+.card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}

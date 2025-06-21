@@ -1,0 +1,85 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Bungee&display=swap');
+
+.cart-card {
+  background-color: #67da6d74 ; /* Mor rengin çok saydam hali, 20 hex = %12 opacity */
+  box-shadow: 0 4px 8px #6435c9 ; /* Mor tonunda hafif gölge */
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.cart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(106, 13, 173, 0.5);
+}
+
+
+.cart-image {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  object-fit: cover;
+  height: 100%;
+}
+
+.cart-body {
+  padding: 1.5rem;
+}
+
+.cart-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.quantity-btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.quantity-btn:hover {
+  background-color: #ddd;
+}
+
+.sepet-title {
+    font-family: 'Bungee', cursive;
+    color: #e83e8c;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: 3px 3px 0px #f0f0f0;
+}
+
+/* 🌙 Karanlık Tema desteği */
+
+body.dark-mode .cart-card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .cart-title,
+body.dark-mode .cart-body,
+body.dark-mode .cart-price,
+body.dark-mode b,
+body.dark-mode .text-muted {
+  color: var(--card-text) !important;
+}
+
+body.dark-mode .bg-light {
+  background-color: #2a2a2a !important;
+  color: var(--card-text) !important;
+}
+
+body.dark-mode .alert-warning {
+  background-color: #444 !important;
+  color: #fff !important;
+  border: 1px solid #666;
+}
+
+body.dark-mode .btn-teal {
+  background-color: #3ccfcf;
+  color: #000;
+}
