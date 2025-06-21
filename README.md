@@ -1,4 +1,4 @@
-# Not: Bu proje 2025 yılı Bahar Dönemi Grafik Arayüzü Tasarımı dersi finali için hazırlanıştır.
+# Not: Bu proje 2025 yılı Bahar Dönemi Grafik Arayüzü Tasarımı dersi finali için hazırlanmıştır.
 
 Pizza App 🍕🚀
 React tabanlı, modern ve responsive bir pizza sipariş uygulaması.
