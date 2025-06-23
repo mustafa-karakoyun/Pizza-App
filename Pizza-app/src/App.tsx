@@ -12,6 +12,9 @@ import SuccessPage from "./pages/Succsses";
 import Footer from "./components/Footer";
 import './index.css';
 import "./App.css"; // CSS dosyasını unutma
+import Giris from "./components/giris";
+import HomePage from "./components/giris";
+
 
 export default function App(): JSX.Element {
   const { mode } = useContext(ThemeContext);
@@ -24,7 +27,8 @@ export default function App(): JSX.Element {
 
         <div className="container my-4">
           <Routes>
-            <Route path="/" element={<PizzaList />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/pizza" element={<PizzaList />} />
             <Route path="/cart" element={<CartPage />}/>
             <Route path="/payment" element={<PaymentPage/>} />
             <Route path="/success" element={<SuccessPage />} />

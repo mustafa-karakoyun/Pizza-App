@@ -7,6 +7,7 @@ import { CartContextProvider } from './contexts/CartContext.tsx'
 
 
 
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider>
